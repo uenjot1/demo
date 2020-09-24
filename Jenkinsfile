@@ -1,9 +1,10 @@
 pipeline {
     agent any
-	
-	stage('Deploy') {
-            steps {
-                sh 'kubectl version'
-            }
-    }
+	stages {
+		stage('Deploy') {
+				steps {
+					sh 'kubectl version'
+				}
+		}
+	}
 }
