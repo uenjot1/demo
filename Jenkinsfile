@@ -21,5 +21,10 @@ pipeline {
                 }
             }
         }
+		stage('Deploy') {
+            steps {
+                sh 'kubectl version'
+            }
+        }
     }
 }
